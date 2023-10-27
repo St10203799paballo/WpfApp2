@@ -1,0 +1,36 @@
+﻿<Window x:Class=" WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Module" Height="450" Width="800">
+
+
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF546C9A" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Enter module and code:" Width="195" HorizontalAlignment="Left" FontFamily="Segoe UI Black" />
+            <TextBox x:Name="ModuleCode" Width="200" />
+            <TextBlock Text="Name:" FontFamily="Segoe UI Black" />
+            <TextBox x:Name="ModuleName" Width="200" />
+            <TextBlock Text="Number of Credits:" FontFamily="Segoe UI Black" />
+            <TextBox x:Name="ModuleCredits" Width="200" />
+            <TextBlock Text="Class Hours per week:" FontFamily="Segoe UI Black" />
+            <TextBox x:Name="ModuleWeekHours" Width="200" />
+            <TextBlock Text="Enter number of hours:" FontFamily="Segoe UI Black" />
+            <TextBox x:Name="ModuleHours" Width="200" />
+            <Button Content="Display" Click="CalculateButton_Click" Width="100" />
+            <TextBlock x:Name="ResultText" TextWrapping="Wrap" Margin="0,10,0,0" />
+        </StackPanel>
+
+    </Grid>
+
+</Window>
